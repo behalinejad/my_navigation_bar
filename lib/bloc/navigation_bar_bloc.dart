@@ -1,5 +1,6 @@
 import 'dart:async';
 
+// The Bloc is created for state management of Home Page on changing NavigationBar
 class NavigationBarBloc {
   final StreamController<int> _navigationPageController =StreamController<int>();
   Stream<int> get navigationItemStream => _navigationPageController.stream;
